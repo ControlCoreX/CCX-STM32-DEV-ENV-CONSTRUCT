@@ -16,11 +16,11 @@ Author: CCX开发环境搭建交流群成员
 
 ```json
 "clangd.arguments": [
-  "--query-driver=D:/Developer_Tools/Toolchain/arm-gnu-toolchain-13.3.1/bin/arm-none-eabi-gcc.exe,D:/Developer_Tools/Toolchain/arm-gnu-toolchain-13.3.1/bin/arm-none-eabi-g++.exe"
+  "--query-driver=D:/Developer_Tools/Toolchain/arm-gnu-toolchain-13.3.1/bin/arm-none-eabi-gcc.exe"
 ],
 ```
 
-即, 向clangd指定你所使用的编译器, 这样clangd就会根据编译器, 相对找到标准头文件所在的位置, 然后将那些目录给包含进来, 这样clangd就可以找到这些头文件了.
+即, 向clangd指定你所使用的编译器, 这样clangd就会根据编译器, 相对找到标准头文件所在的位置, 然后将那些目录给包含进来, 这样clangd就可以找到这些头文件了. (像上面这样指定C编译器就可以了, 下图中还指定了C++编译器, 如果没使用到C++则不用加)
 
 > 注意: 上面的路径注意替换为自己电脑上的路径. 设置完毕之后, 删除.cache文件夹, 然后ctrl+shift+p, 选择"重启clangd语法服务器".
 
