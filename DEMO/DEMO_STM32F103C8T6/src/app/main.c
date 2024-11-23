@@ -15,7 +15,6 @@ void led_init()
     HAL_GPIO_Init(GPIOC, &cfg);
 }
 
-
 int main()
 {
     led_init();

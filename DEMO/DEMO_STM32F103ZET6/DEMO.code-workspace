@@ -5,6 +5,9 @@
         }
     ],
     "settings": {
+        "clangd.arguments": [
+            "--query-driver=D:/Developer_Tools/Toolchain/arm-gnu-toolchain-13.3.1/bin/arm-none-eabi-gcc.exe"
+        ],
         "VsCodeTaskButtons.showCounter": true,
         "VsCodeTaskButtons.tasks": [
             {
@@ -18,7 +21,7 @@
                 "tooltip": "Run CMake Build Task"
             },
             {
-                "label": "$(chip) DAP-Link Flash",
+                "label": "$(chip) Flash",
                 "task": "Flash",
                 "tooltip": "Run Flash Task"
             },
