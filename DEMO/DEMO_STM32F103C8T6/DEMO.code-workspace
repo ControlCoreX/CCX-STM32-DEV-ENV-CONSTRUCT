@@ -1,0 +1,27 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "VsCodeTaskButtons.showCounter": true,
+        "VsCodeTaskButtons.tasks": [
+            {
+                "label": "$(wrench) Configure",
+                "task": "CMake Configure",
+                "tooltip": "Run CMake Configure Task"
+            },
+            {
+                "label": "$(tools) Build",
+                "task": "CMake Build",
+                "tooltip": "Run CMake Build Task"
+            },
+            {
+                "label": "$(chip) DAP-Link Flash",
+                "task": "Flash",
+                "tooltip": "Run Flash Task"
+            },
+        ]
+    }
+}

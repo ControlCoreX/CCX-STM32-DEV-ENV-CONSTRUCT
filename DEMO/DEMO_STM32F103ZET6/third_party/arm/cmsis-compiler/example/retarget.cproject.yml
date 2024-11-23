@@ -1,0 +1,22 @@
+project:
+
+  packs:
+    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-Compiler
+
+  groups:
+    - group: Documentation
+      files:
+        - file: ./README.md
+    - group: Main
+      files:
+        - file: ./main.c
+        - file: ./stdout_USART.c
+
+  components:
+    - component: CMSIS:CORE
+    - component: CMSIS Driver:USART
+    - component: CMSIS-Compiler:CORE
+    - component: CMSIS-Compiler:STDOUT:Custom
+    - component: Device:Startup&C Startup
+    - component: Board Support&V2M-MPS2:Common

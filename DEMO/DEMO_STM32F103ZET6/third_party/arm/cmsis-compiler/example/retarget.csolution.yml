@@ -1,0 +1,22 @@
+solution:
+  created-for: CMSIS-Toolbox@2.0.0
+  cdefault:
+
+  packs:
+    - pack: Keil::V2M-MPS2_CMx_BSP@1.8.0
+
+  target-types:
+    - type: VHT_CM3
+      device: CMSDK_CM3_VHT
+
+  build-types:
+    - type: Debug
+      debug: on
+      optimize: none
+
+    - type: Release
+      debug: off
+      optimize: size
+
+  projects:
+    - project: ./retarget.cproject.yml
