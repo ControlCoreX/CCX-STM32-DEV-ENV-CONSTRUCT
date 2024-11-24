@@ -2,7 +2,7 @@
 
 Date: 2024-11-21
 
-Author: CCX开发环境搭建交流群成员
+Author: ControlCoreX
 
 ---
 
@@ -43,4 +43,12 @@ clangd里面其实专门有一个东西叫System Includes Extractor的东西, �
 CMake东西太多了, 我不可能全部讲完, 而且里面很多东西我也不会.
 
 所以最好是先去大致学一下CMake, 有一点基础, 然后再来看这个教程.
+
+
+
+## 打开工程后状态栏没有显示"configure", "Build", "Flash"按钮
+
+需要双击模板工程文件夹中的`xxx.code-workspace`文件打开工程, 而不能以`Open Folder`的方式打开.
+
+还要确保安装了`Task Buttons`这个插件, 注意不要安装错了.
 
