@@ -36,7 +36,7 @@ clangd里面其实专门有一个东西叫System Includes Extractor的东西, �
 
 
 
-## 会讲CMakeLists.txt怎么写吗
+## Q2: 会讲CMakeLists.txt怎么写吗
 
 不会.
 
@@ -46,9 +46,25 @@ CMake东西太多了, 我不可能全部讲完, 而且里面很多东西我也�
 
 
 
-## 打开工程后状态栏没有显示"configure", "Build", "Flash"按钮
+## Q3: 打开工程后状态栏没有显示"configure", "Build", "Flash"按钮
 
 需要双击模板工程文件夹中的`xxx.code-workspace`文件打开工程, 而不能以`Open Folder`的方式打开.
 
 还要确保安装了`Task Buttons`这个插件, 注意不要安装错了.
 
+
+
+## Q4: clangd插件和C/C++插件只能安装一个
+
+这两个插件是冲突的, 只能装一个, 如果想用巨硬官方的C/C++插件的话, 你就按照它的要求去配置. 这个插件我不太懂怎么配置.
+
+要用clangd的话, 就什么配置文件也不用再添加, 模板工程里面有的就已经足够了.
+当有问题的时候, 首先重启一下clangd语法服务器试试.
+
+
+
+## Q5: 程序烧录失败
+
+确保你所使用的芯片和烧录器与模板工程里面的`task.json`文件里面对`Flash`这个task的配置对应得上.
+
+如果你使用的是CMSIS-DAP的话, 烧录器的配置文件不用改, 但如果你使用的是ST-Link的话, 就需要改把`cmsis-dap.cfg`改为`stlink-v2.cfg`.
