@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "cmsis-dap",
+            "servertype": "openocd",
+            "executable": "./build/MINIMUM-WITH-HAL.elf",
+            "breakAfterReset": true,
+            // "runToEntryPoint": "software_init_hook",
+            // "svdFile": "./src/driver/target/stm32h7/svd/STM32H7B0x.svd",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "toolchainPrefix": "arm-none-eabi"
+        }
+    ]
+}

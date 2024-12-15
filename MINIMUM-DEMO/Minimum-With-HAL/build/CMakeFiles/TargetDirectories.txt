@@ -1,0 +1,7 @@
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/CMakeFiles/MINIMUM-WITH-HAL.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/CMakeFiles/edit_cache.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/CMakeFiles/rebuild_cache.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/third_party/st/CMakeFiles/edit_cache.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/third_party/st/CMakeFiles/rebuild_cache.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/third_party/st/stm32f4xx_hal_driver/CMakeFiles/edit_cache.dir
+C:/Users/tuwenbo/Desktop/Minimum-With-HAL/build/third_party/st/stm32f4xx_hal_driver/CMakeFiles/rebuild_cache.dir
